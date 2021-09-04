@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Mover : MonoBehaviour
 {
-    [SerializeField] float xSpeed = .01f;
-    [SerializeField] float zSpeed = .01f;
+    [SerializeField] float xSpeed = 2f;
+    [SerializeField] float zSpeed = 2f;
 
     private void Update()
     {
