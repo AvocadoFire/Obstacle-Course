@@ -20,7 +20,7 @@ public class ObjectHit : MonoBehaviour
             myRenderer.material.color = Color.red;
         }
 
-       if (other.gameObject.tag == "Ground")
+       if (other.gameObject.tag == "Ground" && tag != "Roller")
         {
             if (!GetComponent<Rigidbody>()) { return; }
             Destroy (GetComponent<Rigidbody>());
