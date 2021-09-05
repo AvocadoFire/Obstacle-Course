@@ -18,9 +18,8 @@ public class ObjectHit : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             myRenderer.material.color = Color.red;
-            gameObject.tag = "Hit";
-
         }
+
        if (other.gameObject.tag == "Ground")
         {
             if (!GetComponent<Rigidbody>()) { return; }
