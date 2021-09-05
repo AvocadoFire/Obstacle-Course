@@ -9,9 +9,14 @@ public class Mover : MonoBehaviour
 
     private void Update()
     {
+        MovePlayer();
+    }
+
+    private void MovePlayer()
+    {
         float xValue = Input.GetAxis("Horizontal");
         float zValue = Input.GetAxis("Vertical");
-        transform.Translate(xValue * xSpeed * Time.deltaTime, 0,zValue * zSpeed * Time.deltaTime);
+        transform.Translate(xValue * xSpeed * Time.deltaTime, 0, zValue * zSpeed * Time.deltaTime);
     }
 }
 
