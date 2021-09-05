@@ -8,7 +8,6 @@ public class Dropper : MonoBehaviour
 
     MeshRenderer meshRenderer;
     Rigidbody myRigidbody;
-    //bool notDropped = true;
 
     private void Start()
     {
@@ -24,7 +23,6 @@ public class Dropper : MonoBehaviour
         {
             meshRenderer.enabled = true;
             myRigidbody.useGravity = true;
-            //notDropped = false;
             GetComponent<Dropper>().enabled = false;
         }
     }
