@@ -5,12 +5,11 @@ using UnityEngine;
 public class ObjectHit : MonoBehaviour
 {
     MeshRenderer myRenderer;
-   // Rigidbody myRigidbody;
+    [SerializeField] AudioSource myAudio;
 
     private void Start()
     {
         myRenderer = GetComponent<MeshRenderer>();
-        //myRigidbody = GetComponent<Rigidbody>();
     }
 
     private void OnCollisionEnter(Collision other)
@@ -18,6 +17,8 @@ public class ObjectHit : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             myRenderer.material.color = Color.red;
+            myAudio.Play();
+
         }
 
        if (other.gameObject.tag == "Ground" && tag != "Roller")

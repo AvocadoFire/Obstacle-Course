@@ -14,4 +14,6 @@ public class Scorer : MonoBehaviour
         Debug.Log("You've bumped into something " + counter + " times.");
         other.gameObject.tag = "Hit";
     }
+
+
 }
